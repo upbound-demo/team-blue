@@ -7,6 +7,7 @@ spec:
   engine: mariadb
   engineVersion: "10.6.12"
   storageGB: 10
+  initialDBName: wordpress_db
   subnetIdSelector:
     matchLabels:
       demo.upbound.io/root-name: icp-demo-muvaf
