@@ -1,21 +1,21 @@
-apiVersion: demo.upbound.io/v1alpha1
-kind: SQLInstance
-metadata:
-  name: wordpress-db
-  namespace: default
-spec:
-  engine: mariadb
-  engineVersion: "10.6.12"
-  storageGB: 10
-  initialDBName: wordpress_db
-  subnetIdSelector:
-    matchLabels:
-      demo.upbound.io/root-name: muvaf-app-dev-1
-      demo.upbound.io/root-namespace: default
-      access: private
-  securityGroupIdSelector:
-    matchLabels:
-      demo.upbound.io/root-name: muvaf-app-dev-1
-      demo.upbound.io/root-namespace: default
-  writeConnectionSecretToRef:
-    name: sqlinstance-conn
+# apiVersion: demo.upbound.io/v1alpha1
+# kind: SQLInstance
+# metadata:
+#   name: wordpress-db
+#   namespace: default
+# spec:
+#   engine: mariadb
+#   engineVersion: "10.6.12"
+#   storageGB: 10
+#   initialDBName: wordpress_db
+#   subnetIdSelector:
+#     matchLabels:
+#       demo.upbound.io/root-name: muvaf-app-dev-1
+#       demo.upbound.io/root-namespace: default
+#       access: private
+#   securityGroupIdSelector:
+#     matchLabels:
+#       demo.upbound.io/root-name: muvaf-app-dev-1
+#       demo.upbound.io/root-namespace: default
+#   writeConnectionSecretToRef:
+#     name: sqlinstance-conn
